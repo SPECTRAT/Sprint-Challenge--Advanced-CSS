@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites use multiple layouts, each assigned to a specific device screen size, to give the user easy access to the contents of the site. A full responsive website uses only one layout with the addition of media queries to adjust the stylings of the website depending on the screen dimensions (min-widths, max-widths) of the user's device.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop first websites are build with the version for desktop and larger screened devices in mind first. When making the site responsive, media queries are added using "max-width" to define the screen size that styling changes will take place for smaller screen sizes. Alternately, mobile first means designing and building a site with mobile or smaller screened devices in mind first. Media queries are then added using "min-with" to define when styling changes will display for larger screen sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Default font-size in a browser is typically set to 16pts. What this does is sets the default font-size to 10px (since 10 is 62.5% of 16), making it a lot easier to gauge what size your text will be when using em or rem in css styling. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing takes input in one coding language and outputs it as another. In the context of LESS, it takes components (that are very similar to CSS) written in a certain syntax, and actively compiles and outputs the information as CSS in its usual syntax. It's kind of like a coding language translator. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really enjoy the available use of variables and mixins in preprocessing. It makes things so much easier, a lot faster, and a lot less repetative. What has given me the most trouble is keeping track of nesting and the hierarchy that goes along with it. While this has been giving me the most trouble, I do notice that it's also forcing me to be more attentive to my code which is an upside. It really forces you to take note and keep track of the order of things.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

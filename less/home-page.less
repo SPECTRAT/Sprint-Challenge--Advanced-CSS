@@ -11,6 +11,10 @@
     p {
       padding:0 15px;
     }
+
+    img {
+      border-radius: 5px;
+    }
   
   }
 
@@ -57,7 +61,8 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      button{
+        .btn(@btn-bg-color, @sea-shell, darken(@btn-bg-color, 80%), teal);
       }
     }
 

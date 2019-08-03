@@ -1,6 +1,21 @@
-.flexOptions(@flxdir: row, @flxjustfy, @flxalgn) {
+.flexBox(@flxdir, @justflx, @alnflx) {
   display: flex;
   flex-direction: @flxdir;
-  justify-content: @flxjustfy;
-  align-items: @flxalgn;
+  justify-content: @justflx;
+  align-items: @alnflx;
+}
+
+.btn(@bgclr, @txtclr,@hvrbg, @hvrtxt) {
+  background-color: @bgclr;
+  height: 27px;
+  width: 80px;
+  border-color: transparent;
+  border-radius: 5px;
+  color: @txtclr;
+  &:hover{
+    background-color: @hvrbg;
+    color: @hvrtxt;
+    cursor: pointer;
+  }
+
 }

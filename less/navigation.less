@@ -1,32 +1,18 @@
-// nav {
-//   display: flex;
-//   .flexOptions (column, center, center);
-//   // flex-direction: column;
-//   // align-items: center;
-//   background-color: @nav-bg;
-//   .nav-links {
-//     //.flexOptions(@flxdir, space-evenly, center);
-//     display: flex;
-    
-//     justify-content: space-evenly;
-//     width: 35%;
-//     font-size: 1.5rem;
-//     a {
-//       text-decoration: none;
-//       color: @nav-font;
-//     }
-    
-    
-//   }
-// }
 
 nav {
-  .flexOptions(column, center, center);
+  .flexBox(column, center, center);
   background-color: @nav-bg;
+  padding-top: 20px;
   .nav-links{
-    .flexOptions(@flxdir, space-evenly, center);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .flexBox(row, space-evenly, center);
     width: 35%;
     font-size: 1.5rem;
+    a {
+      text-decoration: none;
+      color: @nav-font;
+    }
     
 
   }

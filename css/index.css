@@ -185,6 +185,11 @@ nav .nav-links a {
   text-decoration: none;
   color: #454A59;
 }
+@media (max-width: 500px) {
+  nav .nav-links {
+    width: 95%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -203,6 +208,7 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  width: 100%;
 }
 .home .space-images {
   display: flex;

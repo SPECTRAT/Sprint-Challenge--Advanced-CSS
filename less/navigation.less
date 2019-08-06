@@ -1,1 +1,22 @@
-// Navigation code here
+
+nav {
+  .flexBox(column, center, center);
+  background-color: @nav-bg;
+  padding-top: 20px;
+  .nav-links{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .flexBox(row, space-evenly, center);
+    width: 35%;
+    font-size: 1.5rem;
+    a {
+      text-decoration: none;
+      color: @nav-font;
+    }
+
+    @media @phone {
+      width: 95%;
+    }
+
+  }
+}
